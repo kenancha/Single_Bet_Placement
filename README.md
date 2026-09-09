@@ -16,10 +16,16 @@ Installations steps within the project:
 
 ## Structure
 
-- `src/user_interface/pages/betting_page.py` - Page object for the betting UI
-- `src/utils/api/betting_api.py` - HTTP client for bet-related API calls
-- `tests/bet_placement/test_bet_placement.py` - UI tests for placing a bet
-- `tests/api/test_bet_api.py` - API tests for insufficient balance
+* `config.json` — Stores the URL and user ID used by both the UI and API tests. These values are loaded through `conftest.py`.
+* `src/user_interface/pages/betting_page.py` — Page Object for the betting UI.
+* `src/utils/api/betting_api.py` — HTTP client for bet-related API calls.
+* `tests/bet_placement/test_bet_placement.py` — UI tests for placing a bet.
+* `tests/api/test_bet_api.py` — API tests for insufficient balance.
+
+The project follows the Page Object Model (POM) design pattern.
+
+Each test folder that requires test data contains a `cases.yaml` file with the dataset and structure needed for its tests. A corresponding data provider is located in the `data_providers` folder and is responsible for extracting and processing the dataset before it is passed to the tests.
+
 
 ## Running tests
 Option 1: 

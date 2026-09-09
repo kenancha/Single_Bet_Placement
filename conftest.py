@@ -33,7 +33,7 @@ def context(request):
 @pytest.fixture(scope="function")
 def context_api(request):
     with open("config.json", "r") as file:
-        data = json.load(file)["page"]
+        data = json.load(file)["api"]
     context_api.base_url = data["url"]
     if "user_id" in data:
         context_api.header = {"x-user-id" : data["user_id"]}
