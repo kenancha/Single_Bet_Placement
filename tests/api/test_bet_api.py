@@ -10,7 +10,7 @@ def test_place_bet_with_insufficient_balance(context_api):
 
     api = BettingAPIClient(base_url)
     with allure.step("Reset balance"):
-        api.reset_balance(header=header, payload= {"balance": 120, "currency" : "EUR"})
+        api.reset_balance(header=header)
 
     get_matches = api.get_matches(header)
     with allure.step("Get Matches"):
