@@ -8,7 +8,7 @@ Installations steps within the project:
 - Create a virtual environment
 - Open a terminal and activate the virtual environment  
 ```bash
-  venv\Scripts\activate
+  .venv\Scripts\activate
 ```
 - Install requirements `pip install -U -r requirements.txt`
 - Set the project root as working directory 
