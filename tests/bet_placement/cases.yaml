@@ -1,0 +1,7 @@
+betPlacement:
+    -
+      home: "Atalanta"
+      away: "Fiorentina"
+      league: "Serie A"
+      stake: "1"
+      bet: HOME

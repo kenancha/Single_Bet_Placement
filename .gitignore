@@ -1,0 +1,6 @@
+# Ignore virtual environments
+.venv/
+
+# Ignore Allure results and reports
+allure-report/
+allure-results/
